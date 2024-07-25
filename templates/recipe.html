@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ recipe_name }}{% endblock %}
+
+{% block content %}
+    <h1 class="text-3xl font-bold mb-4">{{ recipe_name }}</h1>
+    <img src="{{ url_for('static', filename='images/' + recipe_name + '.jpg') }}" alt="{{ recipe_name }}" class="w-full h-64 object-cover mb-4">
+    <p class="text-gray-700">This is a placeholder for the {{ recipe_name }} recipe. Add the recipe details here.</p>
+{% endblock %}
